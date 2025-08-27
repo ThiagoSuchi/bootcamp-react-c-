@@ -2,6 +2,14 @@
 
 DateTime dataAtual = DateTime.Now;
 
+string a = "20";
+int b = Convert.ToInt32(a);
+
+// OU com parse, que diferente de Convert não trata valores null retornando error
+int c = int.Parse(a);
+
+Console.WriteLine("b => " + b);
+Console.WriteLine("c => " + c);
 Console.WriteLine(dataAtual);
 
 string apresentacao = "Olá, seja bem vindo.";
