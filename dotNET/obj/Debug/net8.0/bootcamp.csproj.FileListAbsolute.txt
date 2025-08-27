@@ -26,3 +26,4 @@
 /home/thiagohs/Área de trabalho/bootcamp/dotNET/obj/Debug/net8.0/bootcamp.pdb
 /home/thiagohs/Área de trabalho/bootcamp/dotNET/obj/Debug/net8.0/bootcamp.genruntimeconfig.cache
 /home/thiagohs/Área de trabalho/bootcamp/dotNET/obj/Debug/net8.0/ref/bootcamp.dll
+/home/thiagohs/Área de trabalho/bootcamp/dotNET/obj/Debug/net8.0/bootcamp.sourcelink.json
