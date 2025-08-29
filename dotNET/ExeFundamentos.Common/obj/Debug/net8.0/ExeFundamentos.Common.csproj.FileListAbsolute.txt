@@ -1,0 +1,12 @@
+/home/thiagohs/Área de trabalho/bootcamp/dotNET/ExeFundamentos.Common/bin/Debug/net8.0/ExeFundamentos.Common.deps.json
+/home/thiagohs/Área de trabalho/bootcamp/dotNET/ExeFundamentos.Common/bin/Debug/net8.0/ExeFundamentos.Common.dll
+/home/thiagohs/Área de trabalho/bootcamp/dotNET/ExeFundamentos.Common/bin/Debug/net8.0/ExeFundamentos.Common.pdb
+/home/thiagohs/Área de trabalho/bootcamp/dotNET/ExeFundamentos.Common/obj/Debug/net8.0/ExeFundamentos.Common.GeneratedMSBuildEditorConfig.editorconfig
+/home/thiagohs/Área de trabalho/bootcamp/dotNET/ExeFundamentos.Common/obj/Debug/net8.0/ExeFundamentos.Common.AssemblyInfoInputs.cache
+/home/thiagohs/Área de trabalho/bootcamp/dotNET/ExeFundamentos.Common/obj/Debug/net8.0/ExeFundamentos.Common.AssemblyInfo.cs
+/home/thiagohs/Área de trabalho/bootcamp/dotNET/ExeFundamentos.Common/obj/Debug/net8.0/ExeFundamentos.Common.csproj.CoreCompileInputs.cache
+/home/thiagohs/Área de trabalho/bootcamp/dotNET/ExeFundamentos.Common/obj/Debug/net8.0/ExeFundamentos.Common.sourcelink.json
+/home/thiagohs/Área de trabalho/bootcamp/dotNET/ExeFundamentos.Common/obj/Debug/net8.0/ExeFundamentos.Common.dll
+/home/thiagohs/Área de trabalho/bootcamp/dotNET/ExeFundamentos.Common/obj/Debug/net8.0/refint/ExeFundamentos.Common.dll
+/home/thiagohs/Área de trabalho/bootcamp/dotNET/ExeFundamentos.Common/obj/Debug/net8.0/ExeFundamentos.Common.pdb
+/home/thiagohs/Área de trabalho/bootcamp/dotNET/ExeFundamentos.Common/obj/Debug/net8.0/ref/ExeFundamentos.Common.dll
