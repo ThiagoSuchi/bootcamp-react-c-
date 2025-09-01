@@ -10,12 +10,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("bootcamp")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("ExeArrays")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bfe6ddfd71d53149c743d688f40ddbbfbbccbc27")]
-[assembly: System.Reflection.AssemblyProductAttribute("bootcamp")]
-[assembly: System.Reflection.AssemblyTitleAttribute("bootcamp")]
+[assembly: System.Reflection.AssemblyProductAttribute("ExeArrays")]
+[assembly: System.Reflection.AssemblyTitleAttribute("ExeArrays")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Gerado pela classe WriteCodeFragment do MSBuild.

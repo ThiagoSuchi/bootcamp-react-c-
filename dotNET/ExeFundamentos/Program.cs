@@ -9,7 +9,6 @@ Pessoa p = new() { Nome = "Thiago", Idade = 22 };
 p.Apresentar();
 
 Console.WriteLine("\n---------------------------------------------\n");
-
 DateTime dataAtual = DateTime.Now;
 
 string a = "20";
