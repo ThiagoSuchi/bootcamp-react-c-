@@ -1,0 +1,15 @@
+/home/thiagohs/Área de trabalho/bootcamp/ExemploExplorando/bin/Debug/net8.0/ExemploExplorando
+/home/thiagohs/Área de trabalho/bootcamp/ExemploExplorando/bin/Debug/net8.0/ExemploExplorando.deps.json
+/home/thiagohs/Área de trabalho/bootcamp/ExemploExplorando/bin/Debug/net8.0/ExemploExplorando.runtimeconfig.json
+/home/thiagohs/Área de trabalho/bootcamp/ExemploExplorando/bin/Debug/net8.0/ExemploExplorando.dll
+/home/thiagohs/Área de trabalho/bootcamp/ExemploExplorando/bin/Debug/net8.0/ExemploExplorando.pdb
+/home/thiagohs/Área de trabalho/bootcamp/ExemploExplorando/obj/Debug/net8.0/ExemploExplorando.GeneratedMSBuildEditorConfig.editorconfig
+/home/thiagohs/Área de trabalho/bootcamp/ExemploExplorando/obj/Debug/net8.0/ExemploExplorando.AssemblyInfoInputs.cache
+/home/thiagohs/Área de trabalho/bootcamp/ExemploExplorando/obj/Debug/net8.0/ExemploExplorando.AssemblyInfo.cs
+/home/thiagohs/Área de trabalho/bootcamp/ExemploExplorando/obj/Debug/net8.0/ExemploExplorando.csproj.CoreCompileInputs.cache
+/home/thiagohs/Área de trabalho/bootcamp/ExemploExplorando/obj/Debug/net8.0/ExemploExplorando.sourcelink.json
+/home/thiagohs/Área de trabalho/bootcamp/ExemploExplorando/obj/Debug/net8.0/ExemploExplorando.dll
+/home/thiagohs/Área de trabalho/bootcamp/ExemploExplorando/obj/Debug/net8.0/refint/ExemploExplorando.dll
+/home/thiagohs/Área de trabalho/bootcamp/ExemploExplorando/obj/Debug/net8.0/ExemploExplorando.pdb
+/home/thiagohs/Área de trabalho/bootcamp/ExemploExplorando/obj/Debug/net8.0/ExemploExplorando.genruntimeconfig.cache
+/home/thiagohs/Área de trabalho/bootcamp/ExemploExplorando/obj/Debug/net8.0/ref/ExemploExplorando.dll
