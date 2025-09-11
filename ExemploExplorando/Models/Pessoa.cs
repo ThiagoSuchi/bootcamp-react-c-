@@ -7,12 +7,25 @@ namespace ExemploExplorando.Models
 {
     public class Pessoa
     {
-        public Pessoa() {}
-        
+        public Pessoa() { }
+
         public Pessoa(string nome, int idade)
         {
             Nome = nome;
             Idade = idade;
+        }
+
+        /*
+          *   JS → desestruturação é nativa, serve tanto para arrays quanto para objetos.
+          *   C# → desconstrução funciona por padrão em tuplas e pode ser habilitada em classes/structs via método Deconstruct.
+          *   A ideia é a mesma: quebrar um objeto/estrutura em variáveis individuais.
+          *   Diferença: em C# você precisa preparar a classe (com Deconstruct), enquanto no JS é     automático.
+        */
+
+        public void Deconstruct(out string nome, out int idade)
+        {
+            nome = Nome;
+            idade = Idade;
         }
 
         // Encapsular uma variável no C# é torná-la privada 

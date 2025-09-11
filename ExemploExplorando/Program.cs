@@ -1,36 +1,88 @@
 ﻿using ExemploExplorando.Models;
 using System.Globalization;
 
-Dictionary<string, string> estados = [];
-// OBS: o Dictionary garante que todo elemento adicionado seja único
+//-------------------------- Deconstruct -----------------------------
 
-estados.Add("RO", "Rondônia");
-estados.Add("MT", "Mato Grosso");
-estados.Add("SP", "São Paulo");
-estados.Add("RS", "Rio Grande do Sul");
-estados.Add("MG", "Minas Gerais");
+Pessoa pessoa = new("Leonidas", 56);
 
-foreach (var item in estados)
-{
-    Console.WriteLine($"Chave: {item.Key} --> Valor: {item.Value}");
-}
+(string nome, int idade) = pessoa;
 
-Console.WriteLine("\nRemovendo o elemento: RS");
-estados.Remove("RS");
-Console.WriteLine("Alterando o valor da chave: SP");
-estados["SP"] = "São Paulo valor alterado.";
+Console.WriteLine($"Nome: {nome}, Idade: {idade}");
 
-// Só é possível alterar um elemento do dictionary pelo valor, a chave não é alterável
+// //------------------------ Tupla ---------------------------
 
-foreach (var item in estados)
-{
-    Console.WriteLine($"Chave: {item.Key} --> Valor: {item.Value}");
-}
+// (int Id, string nome, string sobrenome, decimal saldo) tupla = (1, "Luíza", "Melo Dantas", 1530.10M);
 
-if (estados.ContainsKey("RO"))
-{
-    Console.WriteLine("RO está no dicionário.");
-}
+// // Outra sintaxe de tupla:
+// ValueTuple<int, string, string, decimal> outraTupla = (2, "Sérgio", "Ramos", 2.500M);
+// var outroExemploTuplaCreate = Tuple.Create(3, "Leticía", "Vasquez", 2.350M);
+
+// Console.WriteLine($"ID: {tupla.Id}");
+// Console.WriteLine($"Nome: {tupla.nome}");
+// Console.WriteLine($"Sobrenome: {tupla.sobrenome}");
+// Console.WriteLine($"Saldo: {tupla.saldo:C} \n");
+
+// Console.WriteLine($"ID: {outraTupla.Item1}");
+// Console.WriteLine($"Nome: {outraTupla.Item2}");
+// Console.WriteLine($"Sobrenome: {outraTupla.Item3}");
+// Console.WriteLine($"Saldo: {outraTupla.Item4:C} \n");
+
+// Console.WriteLine($"ID: {outroExemploTuplaCreate.Item1}");
+// Console.WriteLine($"Nome: {outroExemploTuplaCreate.Item2}");
+// Console.WriteLine($"Sobrenome: {outroExemploTuplaCreate.Item3}");
+// Console.WriteLine($"Saldo: {outroExemploTuplaCreate.Item4:C}");
+
+// LeituraArquivo arquivo = new();
+
+// var (sucesso, linhas, _) = arquivo.LerArquivo("Arquivos/arquivo.txt");
+// // Para descartar um parâmetro usa-se o descart "_" 
+
+// if (sucesso)
+// {
+//     // Console.WriteLine("\nQuantidade de linhas do arquivo: " + quantidadeLinhas);
+//     foreach (string linha in linhas)
+//     {
+//         Console.WriteLine(linha);
+//     }
+// }
+// else
+// {
+//     Console.WriteLine("\nNão foi possível ler o arquivo.");
+// }
+
+
+// // ------------------------ Dictionary ------------------------------------
+
+// Dictionary<string, string> estados = [];
+// // OBS: o Dictionary garante que todo elemento adicionado seja único
+
+// estados.Add("RO", "Rondônia");
+// estados.Add("MT", "Mato Grosso");
+// estados.Add("SP", "São Paulo");
+// estados.Add("RS", "Rio Grande do Sul");
+// estados.Add("MG", "Minas Gerais");
+
+// foreach (var item in estados)
+// {
+//     Console.WriteLine($"Chave: {item.Key} --> Valor: {item.Value}");
+// }
+
+// Console.WriteLine("\nRemovendo o elemento: RS");
+// estados.Remove("RS");
+// Console.WriteLine("Alterando o valor da chave: SP");
+// estados["SP"] = "São Paulo valor alterado.";
+
+// // Só é possível alterar um elemento do dictionary pelo valor, a chave não é alterável
+
+// foreach (var item in estados)
+// {
+//     Console.WriteLine($"Chave: {item.Key} --> Valor: {item.Value}");
+// }
+
+// if (estados.ContainsKey("RO"))
+// {
+//     Console.WriteLine("RO está no dicionário.");
+// }
 
 
 // //----------------------------- Pilhas(Stack) - LIFO -----------------------------
