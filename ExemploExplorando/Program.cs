@@ -1,13 +1,24 @@
 ﻿using ExemploExplorando.Models;
 using System.Globalization;
 
-//-------------------------- Deconstruct -----------------------------
+//----------------------------- If Ternário ------------------------------
 
-Pessoa pessoa = new("Leonidas", 56);
+// Convencional
+int num = 1;
+bool ePar = false;
 
-(string nome, int idade) = pessoa;
+ePar = num % 2 == 0;
+Console.WriteLine($"O número {num} é " + (ePar ? "par" : "ímpar"));
 
-Console.WriteLine($"Nome: {nome}, Idade: {idade}");
+
+
+// //-------------------------- Deconstruct -----------------------------
+
+// Pessoa pessoa = new("Leonidas", 56);
+
+// (string nome, int idade) = pessoa;
+
+// Console.WriteLine($"Nome: {nome}, Idade: {idade}");
 
 // //------------------------ Tupla ---------------------------
 
