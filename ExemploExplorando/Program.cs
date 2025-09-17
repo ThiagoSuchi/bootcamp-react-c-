@@ -2,25 +2,39 @@
 using System.Globalization;
 using Newtonsoft.Json;
 
-//----------------------------- Serialização --------------------------------
+//---------------------------- Deserialização ----------------------------------
 
-List<Venda> listVendas = new();
+string conteudoArquivo = File.ReadAllText("Arquivos/vendas.json");
 
-Venda v1 = new(1, "Material de escritório", 25.0M);
-Venda v2 = new(2, "Licença de Software", 150.0M);
-Venda v3 = new(3, "Peças de carro", 1500.0M);
-Venda v4 = new(4, "Material de estudo - Lápis e borracha", 10.0M);
+List<VendaDeserializacao> listVendas = JsonConvert.DeserializeObject<List<VendaDeserializacao>>(conteudoArquivo);
 
-listVendas.Add(v1);
-listVendas.Add(v2);
-listVendas.Add(v3);
-listVendas.Add(v4);
+foreach (VendaDeserializacao venda in listVendas)
+{
+    Console.WriteLine(
+        $" Id: {venda.Id} -" +
+        $" Produto: { venda.Produto} -" +
+        $" Preco: { venda.Preco} -" +
+        $" Data: { venda.DataVenda.ToString("dd/MM/yyyy HH:mm")}"
+    );
+}
 
-// Serializa um objeto em uma string JSON
-string serializado = JsonConvert.SerializeObject(listVendas, Formatting.Indented);
 
-File.WriteAllText("Arquivos/vendas.json", serializado);
-Console.WriteLine(serializado);
+// //----------------------------- Serialização --------------------------------
+
+// DateTime dataAtual = DateTime.Now;
+
+// Venda v1 = new(1, "Material de escritório", 25.0M, dataAtual);
+// Venda v2 = new(2, "Licença de Software", 150.0M, dataAtual);
+// Venda v3 = new(3, "Peças de carro", 1500.0M, dataAtual);
+// Venda v4 = new(4, "Material de estudo - Lápis e borracha", 10.0M, dataAtual);
+
+// List<Venda> listVendas = [v1, v2, v3, v4];
+
+// // Serializa um objeto em uma string JSON
+// string serializado = JsonConvert.SerializeObject(listVendas, Formatting.Indented);
+
+// File.WriteAllText("Arquivos/vendas.json", serializado);
+// Console.WriteLine(serializado);
 
 // //----------------------------- If Ternário ------------------------------
 

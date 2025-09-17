@@ -1,22 +1,26 @@
 [
   {
     "Id": 1,
-    "Produto": "Material de escritório",
-    "Preco": 25.0
+    "Produto_Venda": "Material de escritório",
+    "Preco": 25.0,
+    "DataVenda": "2025-09-17T11:15:15.1024087-04:00"
   },
   {
     "Id": 2,
-    "Produto": "Licença de Software",
-    "Preco": 150.0
+    "Produto_Venda": "Licença de Software",
+    "Preco": 150.0,
+    "DataVenda": "2025-09-17T11:15:15.1024087-04:00"
   },
   {
     "Id": 3,
-    "Produto": "Peças de carro",
-    "Preco": 1500.0
+    "Produto_Venda": "Peças de carro",
+    "Preco": 1500.0,
+    "DataVenda": "2025-09-17T11:15:15.1024087-04:00"
   },
   {
     "Id": 4,
-    "Produto": "Material de estudo - Lápis e borracha",
-    "Preco": 10.0
+    "Produto_Venda": "Material de estudo(Lápis e borracha)",
+    "Preco": 10.0,
+    "DataVenda": "2025-09-17T11:15:15.1024087-04:00"
   }
 ]
