@@ -1,15 +1,35 @@
 ﻿using ExemploExplorando.Models;
 using System.Globalization;
+using Newtonsoft.Json;
 
-//----------------------------- If Ternário ------------------------------
+//----------------------------- Serialização --------------------------------
 
-// Convencional
-int num = 1;
-bool ePar = false;
+List<Venda> listVendas = new();
 
-ePar = num % 2 == 0;
-Console.WriteLine($"O número {num} é " + (ePar ? "par" : "ímpar"));
+Venda v1 = new(1, "Material de escritório", 25.0M);
+Venda v2 = new(2, "Licença de Software", 150.0M);
+Venda v3 = new(3, "Peças de carro", 1500.0M);
+Venda v4 = new(4, "Material de estudo - Lápis e borracha", 10.0M);
 
+listVendas.Add(v1);
+listVendas.Add(v2);
+listVendas.Add(v3);
+listVendas.Add(v4);
+
+// Serializa um objeto em uma string JSON
+string serializado = JsonConvert.SerializeObject(listVendas, Formatting.Indented);
+
+File.WriteAllText("Arquivos/vendas.json", serializado);
+Console.WriteLine(serializado);
+
+// //----------------------------- If Ternário ------------------------------
+
+// // Convencional
+// int num = 1;
+// bool ePar = false;
+
+// ePar = num % 2 == 0;
+// Console.WriteLine($"O número {num} é " + (ePar ? "par" : "ímpar"));
 
 
 // //-------------------------- Deconstruct -----------------------------

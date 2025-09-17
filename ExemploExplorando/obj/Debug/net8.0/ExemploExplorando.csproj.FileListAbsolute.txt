@@ -13,3 +13,6 @@
 /home/thiagohs/Área de trabalho/bootcamp/ExemploExplorando/obj/Debug/net8.0/ExemploExplorando.pdb
 /home/thiagohs/Área de trabalho/bootcamp/ExemploExplorando/obj/Debug/net8.0/ExemploExplorando.genruntimeconfig.cache
 /home/thiagohs/Área de trabalho/bootcamp/ExemploExplorando/obj/Debug/net8.0/ref/ExemploExplorando.dll
+/home/thiagohs/Área de trabalho/bootcamp/ExemploExplorando/bin/Debug/net8.0/Newtonsoft.Json.dll
+/home/thiagohs/Área de trabalho/bootcamp/ExemploExplorando/obj/Debug/net8.0/ExemploExplorando.csproj.AssemblyReference.cache
+/home/thiagohs/Área de trabalho/bootcamp/ExemploExplorando/obj/Debug/net8.0/ExemploE.B7F01285.Up2Date
