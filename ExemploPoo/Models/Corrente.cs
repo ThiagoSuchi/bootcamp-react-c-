@@ -5,8 +5,11 @@ using System.Threading.Tasks;
 
 namespace ExemploPoo.Models
 {
-    public class Professor(string nome) : Pessoa(nome)
+    public class Corrente : Conta
     {
-        public decimal Salario { get; set; }
+        public override void Creditar(decimal valor)
+        {
+            saldo += valor;
+        }
     }
 }
