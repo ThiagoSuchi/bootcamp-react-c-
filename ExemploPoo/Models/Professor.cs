@@ -8,5 +8,10 @@ namespace ExemploPoo.Models
     public class Professor(string nome) : Pessoa(nome)
     {
         public decimal Salario { get; set; }
+
+        public override void Apresentar()
+        {
+            Console.WriteLine("Olá sou o professor " + Nome);
+        }
     }
 }

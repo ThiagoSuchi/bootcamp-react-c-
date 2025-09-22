@@ -1,11 +1,22 @@
-﻿using ExemploPoo.Models;
+﻿using ExemploPoo.interfaces;
+using ExemploPoo.Models;
 
-//---------------------- Construtor por Herança -----------------
-Pessoa p1 = new("Letícia") { Idade = 28 };
-Aluno a1 = new("Carlos") { Idade = 15, Nota = 7.6 };
+//-------------------------- Interfaces ---------------------------
+ICalculadora calc = new Calculadora();
+Console.WriteLine(calc.Multiplicar(2, 3));
 
-p1.Apresentar();
-a1.Apresentar();
+
+// //------------------------- Class Object ---------------------------
+// Computador c = new();
+// Console.WriteLine(c.ToString());
+
+
+// //---------------------- Construtor por Herança -----------------
+// Pessoa p1 = new("Letícia") { Idade = 28 };
+// Aluno a1 = new("Carlos") { Idade = 15, Nota = 7.6 };
+
+// p1.Apresentar();
+// a1.Apresentar();
 
 
 // //---------------- Classe Abstrata --------------------
