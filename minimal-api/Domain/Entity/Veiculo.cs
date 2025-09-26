@@ -3,21 +3,20 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace MinimalApi.Dominio.Entidades;
 
-public class Administrador
+public class Veiculo
 {
     [Key]
     [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
     public int Id { get; set; }
 
     [Required]
-    [StringLength(255)]
-    public required string Email { get; set; }
+    [StringLength(150)]
+    public required string Nome { get; set; }
 
     [Required]
-    [StringLength(50)]
-    public required string Senha { get; set; }
+    [StringLength(100)]
+    public required string Marca { get; set; }
 
     [Required]
-    [StringLength(10)]
-    public required string Perfil { get; set; }
+    public required int Ano { get; set; }
 }
