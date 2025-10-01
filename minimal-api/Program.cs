@@ -46,8 +46,39 @@ app.MapPost("/administradores/login", ([FromBody] LoginDTO loginDTO, IAdministra
 #endregion
 
 #region Veiculos
+ErrorValidation validaDTO(VeiculoDTO veiculoDTO)
+{
+    var validation = new ErrorValidation
+    {
+        Mensagens = []
+    };
+
+    if (string.IsNullOrEmpty(veiculoDTO.Nome))
+    {
+        validation.Mensagens.Add("O nome não pode ser vazio.");
+    }
+
+    if (string.IsNullOrEmpty(veiculoDTO.Marca))
+    {
+        validation.Mensagens.Add("A marca não pode ficar em branco.");
+    }
+
+    if (veiculoDTO.Ano < 1950)
+    {
+        validation.Mensagens.Add("Veículo muito antigo, é aceito somente anos superiores a 1950.");
+    }
+
+    return validation;
+}
+
 app.MapPost("/veiculos", ([FromBody] VeiculoDTO veiculoDTO, IVeiculoService veiculoService) =>
 {
+    var validation = validaDTO(veiculoDTO);
+    if (validation.Mensagens.Count > 0)
+    {
+        return Results.BadRequest(validation);
+    }
+
     var veiculo = new Veiculo
     {
         Nome = veiculoDTO.Nome,
@@ -67,7 +98,7 @@ app.MapGet("/veiculos", ([FromQuery] int? page, IVeiculoService veiculoService) 
     return Results.Ok(veiculos);
 }).WithTags("Veiculos");
 
-app.MapGet("/veiculos/{id}", ([FromRoute] int id, IVeiculoService veiculoService)=>
+app.MapGet("/veiculos/{id}", ([FromRoute] int id, IVeiculoService veiculoService) =>
 {
     var veiculo = veiculoService.BuscaPorId(id);
     if (veiculo == null) return Results.NotFound();
@@ -80,6 +111,12 @@ app.MapPut("/veiculos/{id}", ([FromRoute] int id, VeiculoDTO veiculoDTO, IVeicul
     var veiculo = veiculoService.BuscaPorId(id);
     if (veiculo == null) return Results.NotFound();
 
+    var validation = validaDTO(veiculoDTO);
+    if (validation.Mensagens.Count > 0)
+    {
+        return Results.BadRequest(validation);
+    }
+
     veiculo.Nome = veiculoDTO.Nome;
     veiculo.Marca = veiculoDTO.Marca;
     veiculo.Ano = veiculoDTO.Ano;
@@ -89,7 +126,7 @@ app.MapPut("/veiculos/{id}", ([FromRoute] int id, VeiculoDTO veiculoDTO, IVeicul
     return Results.Ok(veiculo);
 }).WithTags("Veiculos");
 
-app.MapDelete("/veiculos/{id}", ([FromRoute] int id, IVeiculoService veiculoService)=>
+app.MapDelete("/veiculos/{id}", ([FromRoute] int id, IVeiculoService veiculoService) =>
 {
     var veiculo = veiculoService.BuscaPorId(id);
     if (veiculo == null) return Results.NotFound();
