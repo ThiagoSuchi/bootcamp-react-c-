@@ -328,3 +328,6 @@ app.UseAuthorization();
 
 app.Run();
 #endregion
+
+// Make the implicit Program class public for WebApplicationFactory in tests
+public partial class Program { }

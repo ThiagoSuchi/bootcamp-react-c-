@@ -7,6 +7,10 @@ public class DbContexto : DbContext
 {
     private readonly IConfiguration _configuracaoAppSettings;
 
+    public DbContexto(DbContextOptions<DbContexto> options) : base(options)
+    {
+    }
+
     public DbContexto(IConfiguration configuracaoAppSettings)
     {
         _configuracaoAppSettings = configuracaoAppSettings;
